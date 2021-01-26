@@ -1,0 +1,18 @@
+---
+
+version: "3"
+
+services:
+  argus:
+    image: argus:v9
+    container_name: argus
+    tty: true
+    ports:
+      - "80:80"
+    volumes:
+      - /opt/argus/file/config:/var/argus/config
+    healthcheck:
+      test: [ "CMD-SHELL", "argusctl status" ]
+      interval: 10s
+      timeout: 30s
+      retries: 3
