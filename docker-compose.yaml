@@ -10,9 +10,16 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /opt/argus/file/config:/var/argus/config
+      - /opt/argus/file/argus/config:/var/argus/config
+      - /opt/argus/file/argus/users:/var/argus/users
+      - /opt/argus/file/argus/stats:/var/argus/stats
+      - /opt/argus/file/argus/html:/var/argus/html
+      - /opt/argus/file/argus/gcache:/var/argus/gcache
+      - /opt/argus/file/argus/gdata:/var/argus/gdata
+      - /opt/argus/file/argus/notify:/var/argus/notify
     healthcheck:
       test: [ "CMD-SHELL", "argusctl status" ]
       interval: 10s
       timeout: 30s
       retries: 3
+    
