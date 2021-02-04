@@ -1,0 +1,32 @@
+# locations of various items on web pages
+sirensong: /sound/whoopwhoop.wav
+bkgimage: /img/argus.logo.gif
+icon: /img/smile.gif
+icon_down: /img/sad.gif
+nospkr_icon: /img/nospkr.gif
+style_sheet: /argus.css
+javascript: /argus.js
+# send messages to syslog
+syslog: daemon
+# who should be notified when things break? don't summarize notifications
+nolotsmsgs: yes
+# enable built in tcp test port
+test_port: 3074
+# enable built in resolver
+Resolv
+DARP "argusOLTNR" {
+	master "argusMaster" {
+		hostname: 172.27.32.51
+                secret: nmsgroup
+        }
+}
+
+
+
+
+
+
+
+
+
+
