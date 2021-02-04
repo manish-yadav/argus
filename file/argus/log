@@ -1,4 +1,0 @@
-[2021/02/02 18:34:51.0000] [13] successful restart - Argus running
-[2021/02/02 18:38:03.0000] [12] successful restart - Argus running
-[2021/02/02 18:43:18.7706] [12] child caught signal SIGTERM - exiting
-[2021/02/02 18:43:22.0000] [11] parent caught signal SIGTERM - exiting
