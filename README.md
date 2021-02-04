@@ -4,7 +4,7 @@ Uses buster:slim as base.
 
 STEPS
 
-git clone https://github.com/manish-yadav/argus.git
+git clone https://github.com/deveshmanish/argus.git
 
 cd argus
 
